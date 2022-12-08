@@ -15,15 +15,15 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
     //     command = <p>Thanks for adding item</p>
     // }
     // condition ? true: false
-    
 
-    
+
+
     return (
         <div>
             <h1>selected Item:{cart.length}</h1>
             {/* {command} */}
             {cart.length !== 4 ? <p>keep adding</p> : <p>remove all</p>}
-            {cart.length === 0 || <p style={{color:"lime"}} className='lime'>Yah! you are buying</p>}
+            {cart.length === 0 || <p style={{ color: "lime" }} className='lime'>Yah! you are buying</p>}
             {
                 cart.map(tshirt => <p>
                     {tshirt.name}
@@ -31,6 +31,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
 
                 </p>)
             }
+            {cart.length === 3 && <p>triangol</p>}
         </div>
     );
 };
