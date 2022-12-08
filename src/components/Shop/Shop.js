@@ -13,7 +13,7 @@ const Shop = () => {
             const newCart = [...cart, selectedItem];
             setCart(newCart);
         }
-        else{
+        else {
             alert('one item selected')
         }
 
@@ -25,6 +25,7 @@ const Shop = () => {
         setCart(newCart);
 
     }
+  
     return (
 
         <div className='shop-container'>
